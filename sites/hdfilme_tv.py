@@ -46,10 +46,10 @@ def load():
     logger.info("Load %s" % SITE_NAME)
     oGui = cGui()
     params = ParameterHandler()
-    params.setParam('sUrl', URL_CINEMA_TRAILER)
-    oGui.addFolder(cGuiElement('Trailer', SITE_IDENTIFIER, 'showEntries'), params)
     oGui.addFolder(cGuiElement('Filme', SITE_IDENTIFIER, 'showMovieMenu'))
     oGui.addFolder(cGuiElement('Serien', SITE_IDENTIFIER, 'showSeriesMenu'))
+    params.setParam('sUrl', URL_CINEMA_TRAILER)
+    oGui.addFolder(cGuiElement('Trailer', SITE_IDENTIFIER, 'showEntries'), params)
     oGui.addFolder(cGuiElement('Suche', SITE_IDENTIFIER, 'showSearch'))
     oGui.setEndOfDirectory()
 

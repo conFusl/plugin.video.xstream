@@ -134,7 +134,7 @@ def showLinks(sUrl = False, sName = False):
     sName = sName if sName else params.getValue('sName')
     oRequest = cRequestHandler(sUrl)
     sHtmlContent = oRequest.request()
-    pattern = 'var newlink = (.*?);'
+    pattern = 'var hdfilme6 = (.*?);'
     aResult = cParser().parse(sHtmlContent, pattern)
     if not aResult[0] or not aResult[1][0]: return
 
